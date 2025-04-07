@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <title>Add Director</title>
+        <link href="./stylesheets/directorstheme.css" rel="stylesheet">
+        <link href="https://cdn.jsdeliver.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+      <!--Navigation-->
+      <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="addDirectors.html">Add Director</a>
+        <a href="modifyDirectors.html">Change Director</a>
+      </div>
+
+        <div class="container">
+            <div class="form-container">
+                <h2>Add Directors</h2>
+                <form class="form">
+                    <label for="id">ID:</label>
+                    <input type="integer" id="id" name="id" placeholder="Enter Id" required>
+
+                    <label for="director">Director:</label>
+                    <input type="text" id="director" name="director" placeholder="Enter Director" required>
+
+                    <label for="notable_film">Notable Film:</label>
+                    <input type="text" id="notable_film" name="notable_film" placeholder="Enter Notable Film" required>
+
+                    <div class="button-container">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!--Toast-->
+        <script src="//ajax.googlelapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.toaster.js"></script>
+
+        <!--Post Message-->
+        <script src="./js/postDirectors.js"></script>
+        
+    </body>
+</html>
